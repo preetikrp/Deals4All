@@ -1,0 +1,45 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url(../Images/bg100.jpg);
+    /*background-size: 90% 90%;*/
+    background-repeat: no-repeat;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 400px;
+}
+
+.navbar {
+    background-color: #ff0000;
+    font-family: "Trade Gothic W01 Cn 18","Franklin Gothic Medium",Impact,sans-serif;
+    font-stretch: expanded;
+    font-style: normal;
+    font-size:large;
+    
+}
+
+a.classname {
+    background: url(../Images/deals4all_p.png) no-repeat top left;
+    display: block;
+    width: 150px;
+    height: 100px;
+    text-indent: -9999px; /* hides the link text */
+}
+

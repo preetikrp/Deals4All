@@ -1,0 +1,106 @@
+﻿@model IEnumerable<Deals4All.Models.Coupon>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CouponName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CouponDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MerchantID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CommissionType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CommissionValue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pref1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pref2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pref3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pref4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pref5)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CouponName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CouponDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MerchantID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StartDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EndDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CommissionType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CommissionValue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pref1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pref2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pref3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pref4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pref5)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CouponMasterID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CouponMasterID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CouponMasterID })
+        </td>
+    </tr>
+}
+
+</table>

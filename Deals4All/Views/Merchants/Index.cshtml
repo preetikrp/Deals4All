@@ -1,0 +1,94 @@
+﻿@model IEnumerable<Deals4All.Models.Merchant>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MerchantFName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MerchantLName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MerchantEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MerchantMobile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MerchantPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BusinessName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerCity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerState)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerZip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BusinessCountry)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MerchantFName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MerchantLName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MerchantEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MerchantMobile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MerchantPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BusinessName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerCity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerState)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerZip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BusinessCountry)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MerchantID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MerchantID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MerchantID })
+        </td>
+    </tr>
+}
+
+</table>

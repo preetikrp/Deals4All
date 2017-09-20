@@ -1,0 +1,118 @@
+﻿@model IEnumerable<Deals4All.Models.Customer>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerFName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerLName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerMobile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerCity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerState)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerZip)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerCountry)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pref1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pref2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pref3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pref4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pref5)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerFName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerLName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerMobile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerCity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerState)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerZip)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerCountry)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pref1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pref2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pref3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pref4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pref5)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CustomerID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CustomerID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CustomerID })
+        </td>
+    </tr>
+}
+
+</table>

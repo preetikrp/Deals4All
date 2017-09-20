@@ -1,0 +1,66 @@
+﻿@model Deals4All.Models.Coupon
+
+@{
+    ViewBag.Title = "Redeem";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    Customizations customclass = new Customizations();
+
+}
+
+<h2>Redeem</h2>
+
+@using Microsoft.AspNet.Identity
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Coupon</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+               @Html.Label("Coupon Code", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("CouponCode",null,new { htmlAttributes = new { @class = "form-control" } })
+                
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Merchant ID", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("MerchantID", customclass.MerchantID(User.Identity.GetUserName()), new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Customer Email", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("CustomerEmail", "", new { htmlAttributes = new { @class = "form-control" } })
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Order Total", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("OrderTotal", "", new { htmlAttributes = new { @class = "form-control" } })
+
+            </div>
+        </div>
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Redeem" class="btn btn-default" /> <input type="reset" value="Reset" class="btn btn-default" />
+            </div>
+            <div>
+                <label id="lblMessage">@Convert.ToString(Session["ReturnMessage"])</label>
+            </div>
+        </div>
+    </div>
+}
+
+

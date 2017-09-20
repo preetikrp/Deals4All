@@ -1,0 +1,113 @@
+﻿@model Deals4All.Models.Merchant
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Merchant</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MerchantFName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MerchantFName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MerchantLName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MerchantLName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MerchantEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MerchantEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MerchantMobile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MerchantMobile)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MerchantPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MerchantPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BusinessName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BusinessName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerCity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerCity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerState)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerZip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerZip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BusinessCountry)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BusinessCountry)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
