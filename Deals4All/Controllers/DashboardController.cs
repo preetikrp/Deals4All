@@ -46,7 +46,7 @@ namespace Deals4All.Controllers
 
             }
 
-            return View();
+            
         }
 
     }
