@@ -17,7 +17,7 @@
 @using Microsoft.AspNet.Identity
 <br />
 <br />
-<h2>CustomerDashboard</h2>
+<h2>Customer Dashboard</h2>
 
 
 <div class="container">
@@ -28,7 +28,7 @@
     <div class="clearfix"></div>
     <fieldset>
 
-        <legend>User Dashboard</legend>
+        @*<legend>User Dashboard</legend>*@
 
         <div class="panel">
 
@@ -43,18 +43,18 @@
                     <span class="glyphicon glyphicon-list"></span>
                     @Html.ActionLink("Edit Profile ", "Edit/" + customclass.CustomerID(User.Identity.GetUserName()), "Customers")
                 </div>
-                <div class="col-md-3  dashboard-icon col-sm-3">
+                @*<div class="col-md-3  dashboard-icon col-sm-3">
                     <span class="glyphicon glyphicon-calendar"></span>
                     @Html.ActionLink("Redeemed Coupons", "Redeemed", "Coupons")
-                </div>
+                </div>*@
                 <div class="col-md-3  dashboard-icon col-sm-3">
                     <span class="glyphicon glyphicon-download-alt"></span>
                     @Html.ActionLink("List All Coupon ", "Index", "Coupons")
                 </div>
-                <div class="col-md-3  dashboard-icon col-sm-3">
+                @*<div class="col-md-3  dashboard-icon col-sm-3">
                     <span class="glyphicon glyphicon-download-alt"></span>
                     @Html.ActionLink("Reports ", "Index", "Reports")
-                </div>
+                </div>*@
             </div>
         </div>
     </fieldset>
