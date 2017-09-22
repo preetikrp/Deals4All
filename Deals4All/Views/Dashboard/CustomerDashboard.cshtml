@@ -2,6 +2,7 @@
 @{
     ViewBag.Title = "CustomerDashboard";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    Customizations customclass = new Customizations();
 }
 
 <!--<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
@@ -13,7 +14,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="~/Content/Site.css" rel="stylesheet" />
-
+@using Microsoft.AspNet.Identity
+<br />
+<br />
 <h2>CustomerDashboard</h2>
 
 
@@ -34,11 +37,11 @@
 
                 <div class="col-md-3  dashboard-icon col-sm-3">
                     <span class="glyphicon glyphicon-user"></span>
-                    @Html.ActionLink("View Profile ", "Details", "Customers")
+                    @Html.ActionLink("View Profile ", "Details/" + customclass.CustomerID(User.Identity.GetUserName()), "Customers")
                 </div>
                 <div class="col-md-3  dashboard-icon col-sm-3">
                     <span class="glyphicon glyphicon-list"></span>
-                    @Html.ActionLink("Edit Profile ", "Edit", "Customers")
+                    @Html.ActionLink("Edit Profile ", "Edit/" + customclass.CustomerID(User.Identity.GetUserName()), "Customers")
                 </div>
                 <div class="col-md-3  dashboard-icon col-sm-3">
                     <span class="glyphicon glyphicon-calendar"></span>

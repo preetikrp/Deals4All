@@ -1,9 +1,18 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-image: url(../Images/bg100.jpg);
-    /*background-size: 90% 90%;*/
+    background-image: url(../Images/bgbg.jpg);
+    /*background-size: 1920px 1080px;*/
+    background-size: 1650px 900px;
+    /*background-size: 100% 100%;*/
     background-repeat: no-repeat;
+    background-color: black;
+    /*background-position: center;*/
+    /*background-position: right bottom, left top;*/
+}
+
+html {
+    /*background-image: url(../Images/bgbg.jpg);*/
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -27,19 +36,18 @@ textarea {
 }
 
 .navbar {
-    background-color: #ff0000;
+    /*background-color: #ff0000;*/
     font-family: "Trade Gothic W01 Cn 18","Franklin Gothic Medium",Impact,sans-serif;
     font-stretch: expanded;
     font-style: normal;
-    font-size:large;
-    
+    font-size: large;
 }
 
 a.classname {
-    background: url(../Images/deals4all_p.png) no-repeat top left;
+    background: url(../Images/d4a_logo.PNG) no-repeat;
     display: block;
-    width: 150px;
-    height: 100px;
+    width: 101px;
+    height: 86px;
     text-indent: -9999px; /* hides the link text */
 }
 

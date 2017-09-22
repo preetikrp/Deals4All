@@ -258,8 +258,6 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Antlr3.Runtime.dll" />
-    <Content Include="bin\Antlr3.Runtime.pdb" />
     <Content Include="bin\EntityFramework.dll" />
     <Content Include="bin\EntityFramework.SqlServer.dll" />
     <Content Include="bin\EntityFramework.SqlServer.xml" />
@@ -282,6 +280,8 @@
     <Content Include="bin\Microsoft.AspNet.Identity.EntityFramework.xml" />
     <Content Include="bin\Microsoft.AspNet.Identity.Owin.dll" />
     <Content Include="bin\Microsoft.AspNet.Identity.Owin.xml" />
+    <Content Include="bin\Microsoft.AspNet.TelemetryCorrelation.dll" />
+    <Content Include="bin\Microsoft.AspNet.TelemetryCorrelation.xml" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
     <Content Include="bin\Microsoft.Owin.dll" />
@@ -324,6 +324,8 @@
     <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="bin\System.Diagnostics.DiagnosticSource.xml" />
     <Content Include="bin\System.Web.Helpers.dll" />
     <Content Include="bin\System.Web.Helpers.xml" />
     <Content Include="bin\System.Web.Mvc.dll" />
@@ -391,17 +393,21 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\accent.png" />
     <Content Include="Images\bg1.png" />
-    <Content Include="Images\bg10.jpg" />
     <Content Include="Images\bg11.jpg" />
     <Content Include="Images\bg2.jpg" />
     <Content Include="Images\bg3.jpg" />
-    <Content Include="Images\bg4.jpg" />
     <Content Include="Images\bg5.jpg" />
-    <Content Include="Images\bg6.jpg" />
     <Content Include="Images\bg7.jpg" />
     <Content Include="Images\bg8.jpg" />
     <Content Include="Images\bg9.jpg" />
+    <Content Include="Images\bg99.jpg" />
+    <Content Include="Images\bgbg.jpg" />
+    <Content Include="Images\bgfinal.jpg" />
+    <Content Include="Images\bg_101.jpg" />
+    <Content Include="Images\bg_new.jpg" />
     <Content Include="Images\bullet.png" />
+    <Content Include="Images\crazy-sale-7799706.jpg" />
+    <Content Include="Images\d4a_logo.PNG" />
     <Content Include="Images\datepick.png" />
     <Content Include="Images\deals4all_p.png" />
     <Content Include="Images\heroAccent.png" />
@@ -415,6 +421,8 @@
     <Content Include="Images\orderedList7.png" />
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
+    <Content Include="Images\shopping_deals_banner_by_aliraza91-d4mzgz6.jpg" />
+    <Content Include="Images\travel-deals-banner-block.jpg" />
     <Content Include="obj\Debug\WebApplication2.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\WebApplication2.dll" />
     <Content Include="obj\Debug\WebApplication2.pdb" />
@@ -473,6 +481,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

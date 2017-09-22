@@ -20,6 +20,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "classname" })
+                @*@Html.ActionLink("Deals4All", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
   
             </div>
             <div class="navbar-collapse collapse">
@@ -37,7 +38,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p style="color:whitesmoke">&copy; @DateTime.Now.Year - Deals4All Inc.</p>
         </footer>
     </div>
 
